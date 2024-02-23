@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document version="2.0.0">
+  <chunk label="Chunk 1" enabled="true">
+    <sensors next_id="1">
+      <sensor id="0" label="unknown" type="frame">
+        <resolution width="8708" height="11608"/>
+        <property name="layer_index" value="0"/>
+        <bands>
+          <band label="Red"/>
+          <band label="Green"/>
+          <band label="Blue"/>
+        </bands>
+        <data_type>uint8</data_type>
+      </sensor>
+    </sensors>
+    <components next_id="0"/>
+    <cameras next_id="1" next_group_id="0">
+      <camera id="0" sensor_id="0" label="1092311568_marked"/>
+    </cameras>
+    <markers next_id="12" next_group_id="0">
+      <marker id="0" label="140"/>
+      <marker id="1" label="141"/>
+      <marker id="2" label="142"/>
+      <marker id="3" label="143"/>
+      <marker id="4" label="144"/>
+      <marker id="5" label="145"/>
+      <marker id="6" label="146"/>
+      <marker id="7" label="147"/>
+      <marker id="8" label="148"/>
+      <marker id="9" label="149"/>
+      <marker id="10" label="150"/>
+      <marker id="11" label="151"/>
+    </markers>
+    <reference>LOCAL_CS["Local Coordinates (m)",LOCAL_DATUM["Local Datum",0],UNIT["metre",1,AUTHORITY["EPSG","9001"]]]</reference>
+    <settings>
+      <property name="accuracy_tiepoints" value="1"/>
+      <property name="accuracy_cameras" value="10"/>
+      <property name="accuracy_cameras_ypr" value="10"/>
+      <property name="accuracy_markers" value="0.0050000000000000001"/>
+      <property name="accuracy_scalebars" value="0.001"/>
+      <property name="accuracy_projections" value="0.5"/>
+    </settings>
+    <frames next_id="1">
+      <frame id="0">
+        <markers>
+          <marker marker_id="0">
+            <location camera_id="0" pinned="true" x="5200.28125" y="9412.74121"/>
+          </marker>
+          <marker marker_id="1">
+            <location camera_id="0" pinned="true" x="1083.36194" y="9241.41113"/>
+          </marker>
+          <marker marker_id="2">
+            <location camera_id="0" pinned="true" x="7756.40381" y="8599.43945"/>
+          </marker>
+          <marker marker_id="3">
+            <location camera_id="0" pinned="true" x="3201.65356" y="6317.51758"/>
+          </marker>
+          <marker marker_id="4">
+            <location camera_id="0" pinned="true" x="705.641174" y="6616.32422"/>
+          </marker>
+          <marker marker_id="5">
+            <location camera_id="0" pinned="true" x="8397.58398" y="5069.94727"/>
+          </marker>
+          <marker marker_id="6">
+            <location camera_id="0" pinned="true" x="4948.55566" y="4427.64111"/>
+          </marker>
+          <marker marker_id="7">
+            <location camera_id="0" pinned="true" x="505.006348" y="4029.1145"/>
+          </marker>
+          <marker marker_id="8">
+            <location camera_id="0" pinned="true" x="8139.12598" y="2162.10693"/>
+          </marker>
+          <marker marker_id="9">
+            <location camera_id="0" pinned="true" x="3053.146" y="2403.16162"/>
+          </marker>
+          <marker marker_id="10">
+            <location camera_id="0" pinned="true" x="1889.25317" y="1892.36096"/>
+          </marker>
+          <marker marker_id="11">
+            <location camera_id="0" pinned="true" x="6088.08789" y="875.374756"/>
+          </marker>
+        </markers>
+      </frame>
+    </frames>
+  </chunk>
+</document>
