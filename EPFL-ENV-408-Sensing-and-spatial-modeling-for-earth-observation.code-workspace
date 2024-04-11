@@ -2,6 +2,9 @@
 	"folders": [
 		{
 			"path": "."
+		},
+		{
+			"path": "../../../../../Cloud-Speicher/OneDrive - epfl.ch/Moodle/Sensing and spatial modeling for earth observation"
 		}
 	],
 	"settings": {}

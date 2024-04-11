@@ -20,9 +20,12 @@ def reprojectPoints(P, PI_prime):
 
     # TODO : reproject points
     P_c = None
+    P_c = np.dot(PI_prime, P_hom.T).T
 
     # Here we divide the homogeneous coordinates by the third element to account for the depth.
     # TODO: Important to understand why
     P_c_homogeneous = P_c[:,:2]/P_c[:,2].reshape(-1,1)
+
+    # This is done because in projective geometry, a point (x, y, z) is equivalent to (x/z, y/z, 1).
 
     return P_c_homogeneous

@@ -2,7 +2,7 @@
 
 # TODO: uncomment line below if you want to use autoreload with interactive python
 # (reload your imported function after modifications) 
-#%load_ext autoreload
+%load_ext autoreload
 
 
 import os, sys
@@ -68,12 +68,12 @@ p = xy[:,1:]
 P = gcps[:,1:]
 
 #TODO: Implement the buildQ function in DLT.py
-Q = 
+Q = buildQ(p, P)
 # %%-----------------------------------------------------#
 #           Task 2 :  Solve DLT's Eq. System             #
 #--------------------------------------------------------# 
 #TODO: Implement the estimatePoseDLT function in DLT.py
-PI_prime = 
+PI_prime = estimatePoseDLT(Q)
 with np.printoptions(precision=2, suppress=True):
         print(f'PI_prime = {PI_prime}',)
 
@@ -81,7 +81,7 @@ with np.printoptions(precision=2, suppress=True):
 #       Task 3 :  Reproject points on the image          #
 #--------------------------------------------------------# 
 #TODO: Implement the reprojectPoints function in reprojectPoints.py     
-p_reprojected = 
+p_reprojected = reprojectPoints(P, PI_prime)
 
 # Transform both points and reprojected points in top left coordinates to estimate errors in pixels
 uv = perspective2topleft(p, cam_p)
@@ -110,3 +110,5 @@ cam_pos_groundtruth = np.array([2569444.71, 1094733.44, 3881.67])
 print( 'DLT estimated postion = ', cam_pos, 'm' )
 print( 'Groundtruth camera position = ', cam_pos_groundtruth, 'm' )
 print( 'Error = ', np.linalg.norm(cam_pos - cam_pos_groundtruth), 'm' )
+
+# %%
